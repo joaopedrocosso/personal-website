@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { simpleBlogCard } from "../lib/interface";
-import { client, urlFor } from "../lib/sanity";
+import { simpleBlogCard } from "../_lib/interface";
+import { client, urlFor } from "../_lib/sanity";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export default async function Home() {
   const data: simpleBlogCard[] = await getData()
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
       {data.map((post, index) => (
         <Card key={index}>
           <Image 
@@ -34,7 +34,7 @@ export default async function Home() {
             width={500} 
             height={500} 
             alt="Post Image"
-            className="rounded-t-lg h-[200px] object-cover"   
+            className="rounded-t-lg h-[200px] w-[600px] object-cover"   
           />
 
           <CardContent className="mt-5">

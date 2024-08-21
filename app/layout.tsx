@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
-  title: "Blog // João Pedro Cosso",
-  description: "Developer's personal blog @joaopedrocosso",
+  title: "João Pedro Cosso",
+  description: "Developer's personal website @joaopedrocosso",
+  icons: {
+    icon: '/icons/favicon.svg'
+  }
 };
 
 export default function RootLayout({
@@ -18,15 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
         >
-          <NavBar />
-          <main className="max-w-6xl mx-auto px-4">
+          <main>
             {children}
           </main>
         </ThemeProvider>

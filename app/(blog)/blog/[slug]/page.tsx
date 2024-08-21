@@ -1,5 +1,5 @@
-import { fullBlog } from "@/app/lib/interface"
-import { client, urlFor } from "@/app/lib/sanity"
+import { fullBlog } from "@/app/(blog)/_lib/interface"
+import { client, urlFor } from "@/app/(blog)/_lib/sanity"
 import { PortableText } from "next-sanity"
 import Image from "next/image"
 
@@ -28,7 +28,7 @@ export default async function BlogArticle({
     const data: fullBlog = await getData(params.slug)
     
     return(
-        <div className="flex flex-col items-center mt-8">
+        <div className="flex flex-col items-center max-w-6xl mx-auto mt-8">
             <h1>
                 <span className="block text-base text-center text-[#4d4af9] font-semibold tracking-wide uppercase">
                     João Pedro Cosso - Blog
