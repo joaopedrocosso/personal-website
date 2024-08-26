@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Header from "@/components/Header";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,7 +10,6 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "João Pedro Cosso",
   description: "Developer's personal website @joaopedrocosso",
   icons: {
     icon: '/icons/favicon.svg'
@@ -32,6 +31,7 @@ export default function RootLayout({
             disableTransitionOnChange
         >
           <main>
+            <Header />
             {children}
           </main>
         </ThemeProvider>
