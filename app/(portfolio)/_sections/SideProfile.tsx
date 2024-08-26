@@ -13,7 +13,7 @@ const SideProfile = () => {
     const { handleScroll, activeSection } = useScroll();
 
     return (
-        <>
+        <div className='p-4'>
             <div>
                 <Heading />
 
@@ -44,7 +44,7 @@ const SideProfile = () => {
                     icon={<FaLinkedin />}
                 />
             </motion.div>
-        </>
+        </div>
     )
 }
 

@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
 
@@ -9,6 +10,7 @@ const BlogLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div>
         {children}
+        <Footer />
     </div>
   )
 }
