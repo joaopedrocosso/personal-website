@@ -14,12 +14,12 @@ const Header = () => {
   }
 
   return (
-    <header className='z-10 md:bg-transparent md:backdrop-blur-none backdrop-blur-sm bg-gray-900/50 py-4 sticky top-0 border-b border-white/15 md:border-none'>
-      <div className='container'>
-        <div className='flex md:bg-gray-900/50 md:backdrop-blur-sm justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-4xl mx-auto'>
-            <Link href='/'>
-                <Logo width={60} height={34.79} />
-            </Link>
+    <header className='z-50 fixed top-0 left-0 w-full md:bg-transparent md:backdrop-blur-none backdrop-blur-sm bg-gray-900/50 py-4 border-b border-white/15 md:border-none'>
+      <div className='container mx-auto max-w-4xl'>
+        <div className='flex justify-between items-center md:bg-gray-900/50 md:backdrop-blur-sm md:border md:border-white/15 p-2.5 md:rounded-xl'>
+          <Link href='/'>
+              <Logo width={60} height={34.79} />
+          </Link>
 
           <div className='hidden md:block'>
             <nav className='flex gap-8 text-sm'>
