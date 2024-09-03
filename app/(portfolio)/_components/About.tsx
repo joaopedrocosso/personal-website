@@ -11,7 +11,7 @@ const About = () => {
         animate={{opacity: 1}}
         transition={{duration: 0.5, delay: 0.5}}
     >
-        <div className='flex flex-wrap justify-center p-4 pt-16 lg:pt-24'>
+        <div className='flex flex-wrap justify-center p-4 pt-16 lg:pt-36'>
             <div className='w-full'>
                 <div className='flex flex-col justify-center lg:justify-start text-black'>
 

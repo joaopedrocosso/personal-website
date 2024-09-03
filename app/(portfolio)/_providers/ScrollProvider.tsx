@@ -12,13 +12,11 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [activeSection, setActiveSection] = useState<string>('');
 
   const handleScroll = (id: string) => {
-    if (id === 'about') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+    const element = document.getElementById(id);
+    if (element) {
+      const offsetTop = element.getBoundingClientRect().top + window.scrollY;
+      const marginTop = 50;
+      window.scrollTo({ top: offsetTop - marginTop, behavior: 'smooth' });
     }
   };
 

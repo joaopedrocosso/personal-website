@@ -9,7 +9,7 @@ interface PortfolioNavProps {
 const PortfolioNav: React.FC<PortfolioNavProps> = ({ activeSection, handleScroll }) => {
   return (
     <motion.nav 
-      className="lg:flex hidden lg:flex-col text-white-2 tracking-wide items-start gap-4 py-16 font-bold text-sm"
+      className="lg:flex hidden lg:flex-col text-white-2 tracking-wide items-start gap-4 py-14 font-bold text-sm"
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{duration: 0.5, delay: 0.3}}

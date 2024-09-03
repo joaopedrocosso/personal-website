@@ -13,7 +13,7 @@ const SideProfile = () => {
     const { handleScroll, activeSection } = useScroll();
 
     return (
-        <div className='p-4'>
+        <div className='p-4 lg:flex lg:flex-col lg:gap-10'>
             <div>
                 <Heading />
 
