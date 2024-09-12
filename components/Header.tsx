@@ -17,11 +17,11 @@ const Header = () => {
     <header className='z-50 fixed top-0 left-0 w-full md:bg-transparent md:backdrop-blur-none backdrop-blur-sm bg-gray-900/50 py-4 border-b border-white/15 md:border-none'>
       <div className='container mx-auto max-w-4xl'>
         <div className='flex justify-between items-center md:bg-gray-900/50 md:backdrop-blur-sm md:border md:border-white/15 p-2.5 md:rounded-xl'>
-          <Link href='/'>
+          <Link href='/' className='lg:ml-6 md:ml-6'>
               <Logo width={60} height={34.79} />
           </Link>
 
-          <div className='hidden md:block'>
+          <div className='hidden md:block mr-6'>
             <nav className='flex gap-8 text-sm'>
               <a
                 href="/"
@@ -41,8 +41,8 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className='flex gap-4 items-center'>
-            <SelectLanguage />
+          <div className='lg:hidden md:hidden flex gap-4 items-center'>
+            {/* <SelectLanguage /> */}
             <div
               className='md:hidden border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15 cursor-pointer transition-all duration-300'
               onClick={toggleMenu} 

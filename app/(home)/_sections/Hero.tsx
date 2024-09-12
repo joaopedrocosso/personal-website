@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <div className='py-24 md:py-24 lg:py-24 overflow-x-clip'>
+    <div className='pb-24 pt-32 md:pb-24 md:pt-32 lg:pb-24 lg:pt-32 overflow-x-clip'>
 
         <div className='container'>
             <div className='flex flex-col items-center'>
@@ -30,14 +30,17 @@ const Hero = () => {
             </div>
 
             <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-                <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
-                    <span className='font-normal'>Request a service</span>
-                    <FaArrowDown className='size-4'/>
-                </button>
+                <Link href='/blog'>
+                    <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
+                        <span>📝</span>
+                        <span className='font-normal'>Read my blog</span>
+                        {/* <FaArrowDown className='size-4'/> */}
+                    </button>
+                </Link>
                 <Link href='/portfolio'>
                     <button className='inline-flex items-center gap-2 border border-white bg-[#fff] text-gray-900 h-12 px-6 rounded-xl'>
                         <span>👨‍💻</span>
-                        <span className='font-semibold'>See portfolio</span>
+                        <span className='font-semibold'>Professional portfolio</span>
                     </button>
                 </Link>
             </div>
