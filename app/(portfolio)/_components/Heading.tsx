@@ -35,7 +35,7 @@ const Heading = () => {
 
             <div className='flex flex-col gap-2'>
                 <motion.span
-                    className="text-xl lg:text-2xl bg-gradient-to-r from-[#3735ca] to-[#4d4af9] bg-clip-text tracking-tight text-transparent font-semibold"
+                    className="text-xl lg:text-2xl bg-gradient-to-r from-[#2780bc] to-sky-400 bg-clip-text tracking-tight text-transparent font-semibold"
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{duration: 0.5, delay: 0.2}}

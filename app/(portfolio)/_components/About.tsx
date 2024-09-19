@@ -20,10 +20,10 @@ const About = () => {
                     </h1>
 
                     <p className='my-2 w-full lg:max-w-xl leading-relaxed text-white-2'>
-                        My journey in development began with a curiosity about how things work, evolving into a career that forces me to learn and adapt continuously. During this time, I&apos;ve worked on projects ranging from embedded systems for rockets to <strong className='text-blue-1 font-medium'>full-stack applications</strong> ready to be launched.
+                        My journey in development began with a curiosity about how things work, evolving into a career that forces me to learn and adapt continuously. During this time, I&apos;ve worked on projects ranging from embedded systems for rockets to <strong className='text-sky-400 font-medium'>full-stack applications</strong> ready to be launched.
                     </p>
                     <p className='my-2 w-full lg:max-w-xl leading-relaxed text-white-2'>
-                        Currently, my focus is on building web applications with a design and business logic that meet any type of demand, reflecting a careful <strong className='text-blue-1 font-medium'>analysis of requirements</strong> so that everything is done the way it should be. In my spare time, I also create <strong className='text-blue-1 font-medium'>programming content</strong> and interact on forums to help other developers.
+                        Currently, my focus is on building web applications with a design and business logic that meet any type of demand, reflecting a careful <strong className='text-sky-400 font-medium'>analysis of requirements</strong> so that everything is done the way it should be. In my spare time, I also create <strong className='text-sky-400 font-medium'>programming content</strong> and interact on forums to help other developers.
                     </p>
                     <p className='my-2 w-full lg:max-w-xl leading-relaxed text-white-2'>
                         When I&apos;m not coding, I&apos;m usually playing tennis, going to the gym, hanging out with my girlfriend or with my family and a dog who knows how to smile to order snacks.

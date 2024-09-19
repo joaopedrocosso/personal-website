@@ -19,7 +19,7 @@ const Knowledge = () => {
         <div>
             {TECHSTACK.map((techstack, index) => (
               <div key={index} className="mb-8 flex flex-wrap lg:justify-start p-4 hover:bg-[#302f4634] rounded transition-all cursor-pointer">
-                  <div className="w-full max-w-xl lg:w-4/4 text-white-1 hover:text-blue-1 transition-all">
+                  <div className="w-full max-w-xl lg:w-4/4 text-white-1 hover:text-sky-400 transition-all">
                       <h6 className="mb-2 font-semibold">
                           {techstack.title}
                       </h6>
@@ -30,7 +30,7 @@ const Knowledge = () => {
 
                       <div className="flex flex-wrap space-x-2">
                         {techstack.technologies.map((tech, index) => (
-                            <span key={index} className="rounded bg-blue-2 px-2 py-1 text-sm font-semibold text-blue-1">
+                            <span key={index} className="rounded bg-[#082f49] px-2 py-1 text-sm font-semibold text-sky-400">
                                 {tech}
                             </span>
                         ))}

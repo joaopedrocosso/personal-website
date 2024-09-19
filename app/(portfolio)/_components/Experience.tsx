@@ -24,7 +24,7 @@ const Experience = () => {
 
             <Button 
                 href='https://www.linkedin.com/in/joaopedrocosso/'
-                text='View Full Resume'
+                text='Full Resume'
                 icon={<LiaExternalLinkAltSolid />}
             />
         </div>
@@ -38,7 +38,7 @@ const Experience = () => {
                                 <p className="mb-2 text-sm text-white-2">{experience.year}</p>
                             </div>
 
-                            <div className="w-full w-full lg:w-3/4 text-white-1 hover:text-blue-1 transition-all">
+                            <div className="w-full w-full lg:w-3/4 text-white-1 hover:text-sky-400 transition-all">
                                 <h6 className="mb-2 font-semibold">
                                     {experience.role} - {" "} {experience.company}
                                 </h6>
@@ -49,7 +49,7 @@ const Experience = () => {
 
                                 <div className="flex flex-wrap space-x-2">
                                     {experience.technologies.map((tech, index) => (
-                                    <span key={index} className="rounded bg-blue-2 px-2 py-1 text-sm font-semibold text-blue-1 mb-2">
+                                    <span key={index} className="rounded bg-[#082f49] px-2 py-1 text-sm font-semibold text-sky-400 mb-2">
                                         {tech}
                                     </span>
                                     ))}
